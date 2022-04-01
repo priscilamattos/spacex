@@ -1,0 +1,322 @@
+body {
+  /* background-color: #c6c9ce; */
+  font-family: sans-serif;
+  background-image: url("./Images/space.jpeg");
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  height: 20vh;
+}
+
+.logo {
+  max-width: 1280px;
+  height: 18.75rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  width: 80%;
+  height: auto;
+}
+
+.main-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.mainText {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainText .fadeInText {
+  display: none;
+  font-weight: bold;
+  color: #f7f6f6;
+  font-size: 2.5rem;
+  text-align: center;
+  max-width: 70%;
+}
+
+.mainText .subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f31882;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.searchbar,
+.dataFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.searchbar p,
+.searchbar label,
+.dataFilter p,
+.dataFilter label {
+  font-size: 20px;
+  color: #f7f6f6;
+}
+
+input[type="text"] {
+  padding: 6px;
+  font-size: 20px;
+  border: 2px solid #f31882;
+  border-radius: 5px;
+  width: 50%;
+}
+
+input[type="date"] {
+  padding: 6px;
+  font-size: 20px;
+  border: 2px solid #f31882;
+  border-radius: 5px;
+}
+
+.searchBox {
+  width: 60%;
+  height: 150px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBox button {
+  padding: 6px 10px;
+  margin: 0;
+  background: #f31882;
+  font-size: 20px;
+  color: #f7f6f6;
+  border-radius: 5px;
+  border: 2px solid #f7f6f6;
+  width: 75%;
+  height: 45px;
+  margin-bottom: 5%;
+}
+
+.searchBox button:hover {
+  background: #924e6f;
+  cursor: pointer;
+}
+
+button .dataFilter input {
+  padding: 6px;
+  font-size: 17px;
+  border: 2px solid #f31882;
+  border-radius: 5px;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 5px 0 10px;
+}
+
+.results {
+  margin: auto;
+  width: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.launchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  background-color: #16020c;
+  -webkit-box-shadow: 5px 5px #f31882;
+          box-shadow: 5px 5px #f31882;
+  margin: 20px auto;
+  color: #e0a9c4;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 20px 50px;
+}
+
+.launchPatch img {
+  width: 150px;
+  height: 150px;
+}
+
+.launchPatch {
+  margin: auto;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.loader {
+  display: none;
+  margin: auto;
+  border: 16px solid #e0a9c4;
+  border-top: 16px solid #f31882;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+.footer {
+  background-color: #f31882;
+  color: #f7f6f6;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 600;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 780px) {
+  .results {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 690px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 460px) {
+  input {
+    width: 80%;
+  }
+  .fadeInText {
+    font-size: 1rem;
+  }
+  .searchInput {
+    width: 80%;
+  }
+  .dataFilter,
+  .searchbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .searchBox {
+    margin-top: 1rem;
+  }
+  button {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

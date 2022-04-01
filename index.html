@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>SpaceX - Past Launches</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.svg">
+</head>
+
+<body>
+    <div id="page-container">
+        <div class="wrapper">
+            <header class="mainBanner">
+                <figure class="logo">
+                    <img src="./Images/spacex-logo.png" alt="">
+                </figure>
+            </header>
+            <main>
+                <section class="main-content">
+                    <div class="mainText">
+                        <p class="fadeInText">SpaceX designs, manufactures and launches advanced rockets and spacecraft.
+                        </p>
+                        <p class="subtitle">Use our tool to find out more about past launches!</p>
+                    </div>
+                    <section class="dataFilter">
+                        <p>Search launches</p>
+                        <label for="start">from:</label>
+                        <input type="date" id="start" name="start-date" min="2000-01-01" max="2022-12-31">
+                        <label for="start">to:</label>
+                        <input type="date" id="end" name="end-date" min="2000-01-01" max="2022-12-31">
+                    </section>
+                    <section class="searchbar">
+                        <label for="search">Or try a keyword:</label>
+                        <input type="text" placeholder="i.e. 'Falcon' " name="search" class="searchInput">
+                    </section>
+                    <div class="searchBox">
+                        <button id="searchButton" aria-label="Search">Search</button>
+                    </div>
+
+                    <div class="loader"></div>
+
+                    <section class="results">
+
+                    </section>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <p>2022 - Priscila Mattos - Juno College</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
