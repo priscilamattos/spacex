@@ -10,11 +10,7 @@ body {
   margin: 0 auto;
 }
 
-header {
-  height: 20vh;
-}
-
-.logo {
+header .logo {
   max-width: 1280px;
   height: 18.75rem;
   margin: 0 auto;
@@ -29,12 +25,12 @@ header {
           align-items: center;
 }
 
-.logo img {
+header .logo img {
   width: 80%;
   height: auto;
 }
 
-.main-content {
+header .main-content {
   max-width: 1280px;
   margin: 0 auto;
   height: 80vh;
@@ -96,7 +92,7 @@ input[type="text"] {
   font-size: 20px;
   border: 2px solid #f31882;
   border-radius: 5px;
-  width: 50%;
+  width: 30%;
 }
 
 input[type="date"] {
