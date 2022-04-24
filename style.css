@@ -1,5 +1,5 @@
 body {
-  /* background-color: #c6c9ce; */
+  margin: 0;
   font-family: sans-serif;
   background-image: url("./Images/space.jpeg");
   min-height: 100vh;
@@ -289,11 +289,19 @@ label {
 }
 
 @media (max-width: 460px) {
-  input {
-    width: 80%;
+  header .logo {
+    margin: 0;
+    height: 7.75rem;
   }
-  .fadeInText {
-    font-size: 1rem;
+  .mainText {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    height: auto;
+  }
+  .mainText .fadeInText {
+    font-size: 1.5rem;
   }
   .searchInput {
     width: 80%;
@@ -307,11 +315,19 @@ label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+  }
+  .dataFilter input,
+  .searchbar input {
+    width: 80%;
   }
   .searchBox {
-    margin-top: 1rem;
+    width: 100%;
   }
-  button {
+  .searchBox button {
+    width: 85%;
+  }
+  .launchBox {
     width: 80%;
   }
 }

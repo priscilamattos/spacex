@@ -1,7 +1,7 @@
 @import "./partials";
 
 body {
-  /* background-color: #c6c9ce; */
+  margin: 0;
   font-family: sans-serif;
   background-image: url("./Images/space.jpeg");
   min-height: 100vh;
@@ -218,12 +218,19 @@ label {
 }
 
 @media (max-width: 460px) {
-  input {
-    width: 80%;
+  header {
+    .logo {
+      margin: 0;
+      height: 7.75rem;
+    }
   }
-
-  .fadeInText {
-    font-size: 1rem;
+  .mainText {
+    justify-content: center;
+    margin: 0 auto;
+    height: auto;
+    .fadeInText {
+      font-size: 1.5rem;
+    }
   }
 
   .searchInput {
@@ -234,13 +241,20 @@ label {
   .searchbar {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    input {
+      width: 80%;
+    }
   }
 
   .searchBox {
-    margin-top: 1rem;
+    width: 100%;
+    button {
+      width: 85%;
+    }
   }
 
-  button {
+  .launchBox {
     width: 80%;
   }
 }
